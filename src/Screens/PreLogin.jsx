@@ -1,7 +1,9 @@
 import { Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React from 'react'
+import React from 'react';
 
-const PreLogin = () => {
+
+const PreLogin = ({navigation}) => {
+  // console.log(navigation.navigate("signinScreen"))
   return (
     <SafeAreaView style={{ backgroundColor: "#ffff", width: "100%", height: "100%" }}>
 
@@ -46,7 +48,7 @@ const PreLogin = () => {
         </View>
 
         <View style={{ width: "100%", height: "10%", borderWidth: 0, borderColor: "pink", top: 70, display: 'flex', justifyContent: "center", alignItems: "center" }}>
-          <TouchableOpacity style={{ borderWidth: 0, borderColor: "#0D986A", width: "90%", height: "70%", borderRadius: 30, backgroundColor: "#0D986A", display: "flex", justifyContent: 'center', alignItems: 'center' }}>
+          <TouchableOpacity style={{ borderWidth: 0, borderColor: "#0D986A", width: "90%", height: "70%", borderRadius: 30, backgroundColor: "#0D986A", display: "flex", justifyContent: 'center', alignItems: 'center' }} onPress={() => navigation.navigate('signinScreen')} >
             <Text style={{ textAlign: 'center', fontSize: 20, color: "white" }}>MASUK</Text>
           </TouchableOpacity>
         </View>
