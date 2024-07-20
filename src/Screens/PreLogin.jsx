@@ -14,7 +14,7 @@ const PreLogin = ({navigation}) => {
 
             <Image
               style={styles.tinyLogo}
-              source={require("../../assets/upperRectangle.png")}
+              source={require("../../assets/UpperImage.png")}
             />
             <Image
               style={{top:-480}}
@@ -26,30 +26,33 @@ const PreLogin = ({navigation}) => {
           
           <View style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center", height: "35%", borderWidth: 0, borderColor: "red", top: -350 }}>
 
-            <Image
+            {/* <Image
               style={styles.logo}
               source={require("../../assets/Logo.png")}
-            />
+            /> */}
 
           </View>
           <View style={{ width: "100%", borderWidth: 0, height: "18%", top: -280 }}>
-            <Text style={styles.heading}>PLANTIFY</Text>
+            <Text style={styles.heading}>TASKEY</Text>
           </View>
 
         </View>
 
-        <View style={{ borderWidth: 0, borderColor: "black", width: "45%", height: "12%", top: 30, left: 15 }}>
-          <Text style={{ color: "#0D986A", fontSize: 26, lineHeight: 37 }}>GET READY BE HIGYENIC</Text>
+        <View style={{ borderWidth: 0, borderColor: "black", width: "60%", height: "12%", top: 30, left: 100 }}>
+          <View>
+          <Text style={{ color: "#8B78FF", fontSize: 26, lineHeight: 37 }}>BUILDING BETTER</Text>
+          <Text style={{ color: "#8B78FF", fontSize: 26, lineHeight: 37,left:22 }}>WORKSPACES</Text>
+          </View>
+          
         </View>
 
-        <View style={{ width: 327, height: 40, borderWidth: 0, borderColor: "gray", top: 50, left:15 }}>
-          <Text style={{color:"#0D986A",fontSize:12}}>Jelajahi AiLearn untuk menambah kemampuanmu
-            dalam mengoperasikan Adobe Illustrator</Text>
+        <View style={{ width: "100", height: 40, borderWidth: 0, borderColor: "gray", top: 50, left:9,alignItems:'center' }}>
+          <Text style={{color:"#8D8D8D",fontSize:12}}>Create a unique emotional story that describe better than words</Text>
         </View>
 
         <View style={{ width: "100%", height: "10%", borderWidth: 0, borderColor: "pink", top: 70, display: 'flex', justifyContent: "center", alignItems: "center" }}>
-          <TouchableOpacity style={{ borderWidth: 0, borderColor: "#0D986A", width: "90%", height: "70%", borderRadius: 30, backgroundColor: "#0D986A", display: "flex", justifyContent: 'center', alignItems: 'center' }} onPress={() => navigation.navigate('signinScreen')} >
-            <Text style={{ textAlign: 'center', fontSize: 20, color: "white" }}>MASUK</Text>
+          <TouchableOpacity style={{ borderWidth: 0, borderColor: "#0D986A", width: "90%", height: "70%", borderRadius: 30, backgroundColor: "#8B78FF", display: "flex", justifyContent: 'center', alignItems: 'center' }} onPress={() => navigation.navigate('Intro1Screen')} >
+            <Text style={{ textAlign: 'center', fontSize: 20, color: "white" }}>Get Started</Text>
           </TouchableOpacity>
         </View>
 

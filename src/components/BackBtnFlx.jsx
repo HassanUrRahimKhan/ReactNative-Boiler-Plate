@@ -24,8 +24,8 @@ export default BackBtnFlx
 const styles = StyleSheet.create({
     tinyLogo: {
       
-        width: 70,
-        height: 60,
+        width: 60,
+        height: 50,
         left:12
       },
 })
